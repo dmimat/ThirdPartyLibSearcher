@@ -1,0 +1,11 @@
+﻿<Window x:Class="ThirdPartyLibSearcher.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Third-Party Library List Generator for JetBrains .NET Tools" Height="142" Width="547" ResizeMode="NoResize">
+    <Grid HorizontalAlignment="Stretch">
+        <TextBox HorizontalAlignment="Left" Height="20" Margin="10,36,0,0" TextWrapping="Wrap" Text="{Binding InstallDirText}" VerticalAlignment="Top" AcceptsReturn="False" MaxLines="1" Width="473"/>
+        <Button Content="..." HorizontalAlignment="Left" Margin="488,36,0,0" VerticalAlignment="Top" Width="22" Command="{Binding SelectDir}" RenderTransformOrigin="-0.182,0.45"/>
+        <Button Content="Generate list of third-party assemblies" HorizontalAlignment="Left" Margin="117,61,0,0" VerticalAlignment="Top" Width="305" Command="{Binding Generate}"/>
+        <Label Content="Product installation directory" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
